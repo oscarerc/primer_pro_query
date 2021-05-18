@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto js</title>
+    <!-- css  -->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!-- hoja de estilos para vambio de temas -->
+    <link id="tema" rel="stylesheet" type="text/css" href="css/green.css">
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    		<!-- Moment -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/es.js"></script>
+
+    <!-- para el uso del slider utilizamos una libreria de jquery bx slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+</head>
+
+<body>
+
+
+    <!-- botonera -->
+    <div id="selector-tema">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
+    <!-- contenedor global -->
+    <section id="global">
+        <!-- cabecera -->
+        <header>
+            <div id="logo">
+                <h1>PROYECTO JS</h1>
+            </div>
+            <!-- Cargar reloj -->
+            <div id="reloj"></div>
+
+
+            <div class="clearfix">
+                <!-- div de limpiez para lo flotado -->
+
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="">Reloj</a></li>
+                    <li><a href="about.html">sobre mi</a></li>
+                    <li><a href="contact.html">contactos</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <!-- fin cabecera -->
+
+        <!-- slider -->
+        <div class="slider">
+            <div class="imagenes">
+                <div><img src="img/hojas.jpg" title="Funky roots"></div>
+                <div><img src="img/rojo.jpg" title="The long and winding road"></div>
+                <div><img src="img/cielo.jpg" title="Happy trees"></div>
+            </div>
+        </div>
+        <!-- fin slider -->
+
+        <!-- contenido -->
+        <section id="content">
+            <div id="posts">
+                <!-- cdargar post mediante archivos json -->
+            </div>
+            <!-- fin contenido -->
+            <aside id="sidebar">
+                <!-- sidebar barra cointenido lateral -->
+                <div id="about">
+                    <h4><span>¿Quien soy yo?</span></h4>
+                    <img src="img/caracol.jpg" alt="" />
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div id="login">
+                    <h4><span>Identificate</span></h4>
+                    <form action="">
+                        <label for="">
+                            Nombre
+                        </label>
+                        <input type="text" name="name" id="form_name" />
+
+                        <label for="">
+                            Correo
+                        </label>
+                        <input type="email" name="name" />
+
+                        <label for="">
+                            Contraseña
+                        </label>
+                        <input type="password" name="name" />
+
+                        <input type="submit" value="entrar" />
+                    </form>
+                </div>
+
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+        <!-- fincontenido -->
+
+    </section>
+    <!-- footer -->
+    <footer>
+        TODOS LOS DERECHOS RESERVADOS
+
+        <a class="subir" href="">Ir arriba</a>
+    </footer>
+
+    <!-- MI SCRIPT -->
+    <script type="text/javascript" src="js/funciones.js"></script>
+</body>
+
+</html>
